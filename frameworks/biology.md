@@ -37,6 +37,7 @@ class ls_biologies {
         type = "hologram"; // The type, such as human, an alien species, droid, etc.
         isOrganic = 0; // 0-Non-organic being, 1-Organic being
         // Condition for a unit to be this biology.
+        // Passed params: [_unit]
         condition = "call ls_common_fnc_biologyCondition_isHologram";
         // Array of models to use when this unit bleeds.
         // A hologram doesn't bleed, so this stays empty.
@@ -47,6 +48,6 @@ class ls_biologies {
 
 ## 3. Examples of using biologies
 
-Biologies can be used for lots of different systems, such as "ion" or "emp" ammunition not doing anything, or having a lesser effect.
+Biologies can be used for lots of different systems, such as "ion" or "emp" ammunition not doing anything, or having a lesser effect on organic beings.
 
-Another feature, one present in Legion Studios: Core, is custom blood drops when ACE Medical is loaded. Normal blood drops will be replaced with custom ones defined in the unit's biology.
+Legion Studios: Core also uses the blood models when ACE Medical is loaded. Normal blood drops will be replaced with custom ones defined in the unit's biology.

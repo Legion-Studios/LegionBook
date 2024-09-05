@@ -6,12 +6,4 @@
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": false,
-
-    "files.associations": {
-        "*.cpp": "cpp",
-        "*.hpp": "cpp",
-        "*.inc": "cpp"
-    },
-
-    "C_Cpp.errorSquiggles": "disabled"
 }

@@ -12,7 +12,7 @@ To use a flashlight, equip a piece of gear that has a built in flashlight. If yo
 
 Once you have a compatible piece of gear equipped, you can turn on its flashlight in one of two ways. To disable the light, simply repeat one of the steps.
 
-1. Using the keybind, which will grab the first piece of gear found, going in order of helmet; facewear; uniform; vest.
+1. Using the keybind, which will grab the first piece of gear found, going in order of helmet; nvgs; facewear; uniform; vest.
 2. Using the CBA context (double click) action on whatever piece of gear in your inventory.
 
 ### 1.1 Changing light mode

@@ -13,31 +13,35 @@ Making a vehicle use the impulsor framework is very straightforward. Previous it
 Here is an example setup for the impulsor framework using default values:
 
 ```cpp
+// This class contains default values for impulse settings
+// It is strongly encouraged to use this class or inherit
+// from the ls_impulsor class of a vehicle itself.
+class ls_impulsor_base {
+    enabled = 1; // 0-Disabled, 1-Enabled
+    speed = 400; // Speed in km/h
+    fuelDrain = 0.0001; // Percent of fuel used every 1/2 seconds
+    overchargeSpeed = 600; // Same but for overcharge
+    overchargeFuelDrain = 0.0003; // Same but for overcharge
+    // Time in seconds before overcharge can be used after turning it off
+    overchargeCooldown = 60;
+
+    // CfgSounds class to play when impulse is activated
+    impulseSoundOn = "ls_impulseOn_laat";
+    // CfgSounds class to play when impulse is de-activated
+    impulseSoundOff = "ls_impulseOff_laat";
+    repulseSoundOn = ""; // Same but for repulse
+    repulseSoundOff = ""; // Same but for repulse
+}
+
 class CfgVehicles {
     class ls_laati;
     class TAG_myLAATi: ls_laati {
-        ls_impulsor_enabled = 1; // 0-Disabled, 1-Enabled
-        ls_impulsor_boostSpeed_1 = 400; // Impulse speed in km/h
-        ls_impulsor_boostSpeed_2 = 600; // Overcharge speed in km/h
-        // Percentage of fuel used per 1/2 second when using impulse
-        ls_impulsor_fuelDrain_1 = 0.0001;
-        // Same for but overcharge
-        ls_impulsor_fuelDrain_2 = 0.0003;
-        // CfgSounds class to play when impulse is activated
-        ls_impulsor_impulseSoundOn = "ls_impulseOn_laat";
-        // CfgSounds class to play when impulse is de-activated
-        ls_impulsor_impulseSoundOff = "ls_impulseOff_laat";
-        // CfgSounds class to play when repulse is activated
-        ls_impulsor_repulseSoundOn = "";
-        // CfgSounds class to play when repulse is de-activated
-        ls_impulsor_repulseSoundOff = "";
-        // Time in seconds before overcharge can be used after turning it off
-        ls_impulsor_overchargeCooldown = 60;
-    }; 
+        class ls_impulsor: ls_impulsor_base {
+            // Whatever changes you'd like here
+        };
+    };
 };
 ```
-
-**NOTE**: The config setup may receive an overhaul for better naming conventions and better organization.
 
 ## 2. Events
 

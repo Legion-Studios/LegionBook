@@ -12,7 +12,7 @@ This system has gone through a complete rewrite, and has not been kept backwards
 
 ### 1.1 Adding a flashlight to equipment
 
-The lighting framework currently supports helmets, goggles (facewear), uniforms, and vests. Configuration is consistent between all types of gear.
+The lighting framework currently supports helmets, nvgs, goggles (facewear), uniforms, and vests. Configuration is consistent between all types of gear.
 
 Example One:
 
@@ -47,7 +47,7 @@ class CfgWeapons {
 };
 ```
 
-Example Two:&#x20;
+Example Two:
 
 Here's a second example showing how to set up multiple lights. All lights will always be in the same light mode.
 

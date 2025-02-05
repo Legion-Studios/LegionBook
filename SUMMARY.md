@@ -10,6 +10,8 @@
 * [Weapons](features/weapons/README.md)
   * [Attachment Swapping](features/weapons/attachment-swapping.md)
   * [Aim Down Sight Sounds](features/weapons/aim-down-sight-sounds.md)
+* [Equipment](features/equipment/README.md)
+  * [Rangefinders](features/equipment/rangefinders.md)
 * [Vehicle-In-Vehicle Loading](features/vehicle-in-vehicle-loading.md)
 
 ## Frameworks
@@ -21,4 +23,6 @@
 * [Weapons](frameworks/weapons/README.md)
   * [Attachment Swapping](frameworks/weapons/attachment-swapping.md)
   * [Aim Down Sight Sounds](frameworks/weapons/aim-down-sight-sounds.md)
+* [Equipment](frameworks/equipment/README.md)
+  * [Rangefinders](frameworks/equipment/rangefinders.md)
 * [Vehicle-In-Vehicle Loading](frameworks/vehicle-in-vehicle-loading.md)

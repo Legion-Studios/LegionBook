@@ -14,7 +14,7 @@ This allows you to create camo versions of anything in a unit's inventory, such 
 
 The configuration will be the same for any class, but we'll use a helmet as an example. The item replacement will look for a class with the same name with `_activeCamo` added to the end. You can overwrite this by defining `ls_activeCamo_camoItem = "TAG_camoClassName"` in the class.
 
-This saves time adding the property to each class, but also prevents issues with child classes being changed to the wrong item. Legion does not define the `camoItem` property on any of its classes.
+This saves time adding the property to each class, but also prevents issues with child classes being changed to the wrong item. Legion does not define the `camoItem` property on any of its "base" classes. E.g. the standard plain white Katarn I helmet does not define it, but the specific squad member helmets will have it defined to save us having to make the "same" helmets for each variant.
 
 ```cpp
 class CfgWeapons {

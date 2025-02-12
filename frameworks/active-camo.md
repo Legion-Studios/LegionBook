@@ -60,7 +60,11 @@ For uniforms, you can also define the `ls_activeCamo_camouflageCoefficient` prop
 
 **Return Value**
 
-None
+**Only returns where unit is local**
+
+| Description   | Datatype(s) |
+| ------------- | ----------- |
+| Was activated | Bool        |
 
 ### 3.2 `ls_activeCamo_fnc_canActivate`
 | Index | Description                                | Datatype(s) | Default Value |
@@ -81,7 +85,11 @@ None
 
 **Return Value**
 
-None
+**Only returns where unit is local**
+
+| Description     | Datatype(s) |
+| --------------- | ----------- |
+| Was deactivated | Bool        |
 
 ### 3.4 `ls_activeCamo_fnc_canDeactivate`
 | Index | Description                                | Datatype(s) | Default Value |
@@ -92,3 +100,13 @@ None
 | Description    | Datatype(s) |
 | -------------- | ----------- |
 | Can deactivate | Bool        |
+
+## 4. Scripting Examples
+### 4.1 Toggling Active Camo
+```sqf
+if (player getVariable ["ls_activeCamo_active", false]) then {
+    player call ls_activeCamo_fnc_deactivate;
+} else {
+    player call ls_activeCamo_fnc_activate;
+};
+```

@@ -40,6 +40,8 @@ class CfgWeapons {
 };
 ```
 
+For uniforms, you can also define the `ls_activeCamo_camouflageCoefficient` property (in the CfgWeapons class), which will be used instead of the setting if defined. For example, if the camouflage setting is set to `0.5`, but the uniform defines `ls_activeCamo_camouflageCoefficient = 0`, the `0` will be used for the camouflage skill.
+
 ## 2. Events
 
 ### 2.1 Listenable

@@ -16,7 +16,12 @@ Here we get the biology of the current unit that the player is controlling (`ls_
 
 ```sqf
 private _biology = ls_player call ls_common_fnc_getBiology;
-_biology params ["_type", "_isOrganic", "_bloodModels"];
+_biology params ["_type", "_species", "_isOrganic", "_bloodModels"];
+
+// _type will be the "group" that a species belongs to
+// _species will be the exact type.
+
+// Example: Humans have the _type of "nearhuman", but a species of "human".
 
 if (_type == "zombie") then {
     systemChat "rurrgghhh";
@@ -34,6 +39,7 @@ class ls_biologies {
     class biology_base; // default biology class, contains default values
     class hologram: biology_base {
         scope = 2; // Only biologies with scope > 0 are used
+        species = ""; // Exact species type. Optional, class name is used if empty
         type = "hologram"; // The type, such as human, an alien species, droid, etc.
         isOrganic = 0; // 0-Non-organic being, 1-Organic being
         // Condition for a unit to be this biology.

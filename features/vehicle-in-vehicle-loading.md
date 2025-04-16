@@ -18,8 +18,6 @@ If ACE is loaded, there will be ACE Actions for (un)loading vehicles, similar to
 
 This functionality is simply not possible in vanilla.
 
-
-
 ## 2. Keybinds
 
 | Name                | Description                            | Default Key |

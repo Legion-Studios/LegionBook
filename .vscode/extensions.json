@@ -1,6 +1,7 @@
 {
     "recommendations": [
         "editorconfig.editorconfig",
-        "zoma.vscode-auto-open-workspace"
+        "zoma.vscode-auto-open-workspace",
+        "bierner.github-markdown-preview"
     ]
 }

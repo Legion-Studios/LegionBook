@@ -60,8 +60,8 @@ Legion Studios: Core also uses the blood models when ACE Medical is loaded. Norm
 
 ## 4. Additional Resources
 
-- [Legion Studios Public Repo: Biologies Implementation](https://github.com/Legion-Studios/LegionCore-Public/blob/3c33aca69e8ff6933653543aeee846dd145de16d/addons/common/ls_biologies.hpp#L4)
-- [Legion Studios Public Repo: isAlien](https://github.com/Legion-Studios/LegionCore-Public/blob/3c33aca69e8ff6933653543aeee846dd145de16d/addons/common/functions/fnc_biologyCondition_isAlien.sqf#L18)
-- [Legion Studios Public Repo: isHologram](https://github.com/Legion-Studios/LegionCore-Public/blob/3c33aca69e8ff6933653543aeee846dd145de16d/addons/common/functions/fnc_biologyCondition_isHologram.sqf)
-- [Legion Studios Public Repo: isDroid](https://github.com/Legion-Studios/LegionCore-Public/blob/3c33aca69e8ff6933653543aeee846dd145de16d/addons/common/functions/fnc_biologyCondition_isDroid.sqf)
-- [Legion Studios Public Repo: isZombie](https://github.com/Legion-Studios/LegionCore-Public/blob/3c33aca69e8ff6933653543aeee846dd145de16d/addons/common/functions/fnc_biologyCondition_isZombie.sqf)
+- [Legion Studios Public Repo: Biologies Implementation](https://github.com/Legion-Studios/LegionCore-Public/blob/master/addons/common/ls_biologies.hpp)
+- [Legion Studios Public Repo: isAlien](https://github.com/Legion-Studios/LegionCore-Public/blob/master/addons/common/functions/fnc_biologyCondition_isAlien.sqf)
+- [Legion Studios Public Repo: isHologram](https://github.com/Legion-Studios/LegionCore-Public/blob/master/addons/common/functions/fnc_biologyCondition_isHologram.sqf)
+- [Legion Studios Public Repo: isDroid](https://github.com/Legion-Studios/LegionCore-Public/blob/master/addons/common/functions/fnc_biologyCondition_isDroid.sqf)
+- [Legion Studios Public Repo: isZombie](https://github.com/Legion-Studios/LegionCore-Public/blob/master/addons/common/functions/fnc_biologyCondition_isZombie.sqf)

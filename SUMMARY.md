@@ -6,12 +6,12 @@
 
 * [Introduction](features/introduction.md)
 * [Impulsor](features/impulsor)
-  * [Usage](features/impulsor#1.-usage)
+  <!-- * [Usage](features/impulsor#1.-usage)
     * [Impulse Requirements](features/impulsor#1.1-impulse-requirements)
   * [Overcharge](features/impulsor#2-Overcharge)
   * [Keybinds](features/impulsor#3-keybinds)
     * [Alternate Keybinds](features/impulsor#3.1-alternate-keybinds)
-  * [Settings](features/impulsor#4-settings)
+  * [Settings](features/impulsor#4-settings) -->
 * [Lighting (Headlamps)](features/lighting)
   * [Usage](features/lighting#1-usage)
     * [Changing light mode](features/lighting#1.1-changing-light-mode)

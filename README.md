@@ -1,5 +1,5 @@
 ---
-cover: https://raw.githubusercontent.com/Legion-Studios/LegionBook/refs/heads/main/.gitbook/assets/ls_core_stable.png
+cover: https://gitbookio.github.io/onboarding-template-images/header.png
 coverY: 0
 layout:
   cover:

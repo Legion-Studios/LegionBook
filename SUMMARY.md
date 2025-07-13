@@ -25,8 +25,8 @@
   * [Rangefinders](features/equipment/rangefinders.md)
 * [Vehicle-In-Vehicle Loading](features/vehicle-in-vehicle-loading.md)
   * [Usage](features/vehicle-in-vehicle-loading.md#id-1.-usage)
-  * [Keybinds](features/vehicle-in-vehicle.md#id-2.-keybinds)
-  * [Settings](features/vehicle-in-vehicle.md#id-3.-settings)
+  * [Keybinds](features/vehicle-in-vehicle-loading.md#id-2.-keybinds)
+  * [Settings](features/vehicle-in-vehicle-loading.md#id-3.-settings)
 
 ## Frameworks
 

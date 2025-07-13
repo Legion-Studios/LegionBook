@@ -8,7 +8,7 @@ description: >-
 
 This system has gone through a complete rewrite, and has not been kept backwards compatible for the sake of new functionality and better code overall. If you've made changes in your own mods, you will need to update them for their effects to take place.
 
-### 1. Configuration
+## 1. Configuration
 
 ### 1.1 Adding a flashlight to equipment
 

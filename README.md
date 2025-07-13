@@ -1,5 +1,6 @@
 ---
-cover: https://raw.githubusercontent.com/Legion-Studios/LegionBook/refs/heads/main/.gitbook/assets/ls_core_stable.png
+# cover: https://raw.githubusercontent.com/Legion-Studios/LegionBook/refs/heads/main/.gitbook/assets/ls_core_stable.png
+cover: https://raw.githubusercontent.com/Legion-Studios/LegionBook/c1fa1da440655620140772e6b86e92384e95c19c/.gitbook/assets/ls_core_stable.png
 coverY: 0
 layout:
   cover:

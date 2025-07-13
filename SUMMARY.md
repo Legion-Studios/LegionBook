@@ -22,7 +22,7 @@
   * [Attachment Swapping](features/weapons/attachment-swapping.md)
   * [Aim Down Sight Sounds](features/weapons/aim-down-sight-sounds.md)
   * [Weapon Types](features/weapons/weapon-types.md)
-    * [Akimbo](features/weapons/weapon-types#akimbo)
+    * [Akimbo](features/weapons/weapon-types.md#akimbo)
   * [Ammo Types](features/weapons/ammo-types.md)
     * [Stun](features/weapons/ammo-types.md#stun)
     * [Ion](features/weapons/ammo-types.md#ion)

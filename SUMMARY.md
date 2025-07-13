@@ -48,7 +48,7 @@
   * [Scripting Examples](frameworks/active-camo.md#id-4.-scripting-examples)
 * [Weapons](frameworks/weapons/README.md)
   * [Attachment Swapping](frameworks/weapons/attachment-swapping.md)
-    * [Configuration](frameworks/weapons/attachment-swapping#id-1.-configuration)
+    * [Configuration](frameworks/weapons/attachment-swapping.md#id-1.-configuration)
   * [Aim Down Sight Sounds](frameworks/weapons/aim-down-sight-sounds.md)
     * [Configuration](frameworks/weapons/aim-down-sight-sounds.md#id-1.-configuration)
 * [Equipment](frameworks/equipment/README.md)

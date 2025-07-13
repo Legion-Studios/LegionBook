@@ -54,7 +54,7 @@ class ls_biologies {
 
 ## 3. Examples of using biologies
 
-Biologies can be used for lots of different systems, such as "ion" or "emp" ammunition not doing anything, or having a lesser effect on organic beings.
+Biologies can be used for lots of different systems, such as "ion" and "emp" effects not doing anything or having a lesser effect on organic beings.
 
 Legion Studios: Core also uses the blood models when ACE Medical is loaded. Normal blood drops will be replaced with custom ones defined in the unit's biology.
 

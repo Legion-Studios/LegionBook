@@ -1,6 +1,6 @@
 # Introduction
 
-This section covers how we do development at Legion Studios. Including things like macro usage, scripting practices, and how we organize our mods.
+This section covers how we handle development at Legion Studios. Including things like macro usage, scripting practices, and how we organize our mods.
 
 While this is primarily intended for our developers, we leave this public so that other modders can learn better practices and how large mods can be organized.
 

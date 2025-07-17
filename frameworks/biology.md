@@ -20,7 +20,6 @@ _biology params ["_type", "_species", "_isOrganic", "_bloodModels"];
 
 // _type will be the "group" that a species belongs to
 // _species will be the exact type.
-
 // Example: Humans have the _type of "nearhuman", but a species of "human".
 
 if (_type == "zombie") then {
@@ -43,7 +42,7 @@ class ls_biologies {
         type = "hologram"; // The type, such as human, an alien species, droid, etc.
         isOrganic = 0; // 0-Non-organic being, 1-Organic being
         // Condition for a unit to be this biology.
-        // Passed params: [_unit]
+        // Passed params: [_unit, _uniformConfig, _face]
         condition = "call ls_common_fnc_biologyCondition_isHologram";
         // Array of models to use when this unit bleeds.
         // A hologram doesn't bleed, so this stays empty.

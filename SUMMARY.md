@@ -64,4 +64,5 @@
 
 ## Developer Guidelines
 * [Introduction](dev-guidelines/introduction.md)
+* [Local Environment Setup](dev-guidelines/local-environment.md)
 * [Macro Usage](dev-guidelines/macros.md)

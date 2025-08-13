@@ -51,7 +51,7 @@ Before you begin, ensure you have the following installed:
     ````
 
     ```bash
-    git clone https://github.com/Legion-Studios/LegionCore.git core
+    git clone https://github.com/Legion-Studios/Core.git core
     ````
 
     This will create a folder named `core` in your current directory containing the Legion Studios addons.

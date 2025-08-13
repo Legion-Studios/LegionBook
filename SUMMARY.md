@@ -61,3 +61,8 @@
   * [Rangefinders](frameworks/equipment/rangefinders.md)
 * [Vehicle-In-Vehicle Loading](frameworks/vehicle-in-vehicle-loading.md)
   * [Configuration](frameworks/vehicle-in-vehicle-loading.md#id-1.-configuration)
+
+## Developer Guidelines
+* [Introduction](dev-guidelines/introduction.md)
+* [Local Environment Setup](dev-guidelines/local-environment.md)
+* [Macro Usage](dev-guidelines/macros.md)

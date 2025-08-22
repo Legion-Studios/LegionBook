@@ -28,7 +28,8 @@ class CfgVehicles {
                 // "ViV_exit" is a memory point on the LAAT/c that is used as the
                 // center for the vehicle "scan". You can leave this as-is, and it
                 // will use the vehicle's center if undefined.
-                condition = "[this, ls_player] call ls_common_fnc_isPilot and {[this, 'ViV_exit'] call ls_vehicles_fnc_vivCanLoad}";
+                condition = "[this, ls_player] call ls_common_fnc_isPilot && { [this, 'ViV_exit'] call ls_vehicles_fnc_vivCanLoad }";
+                statement = "this call ls_vehicles_fnc_vivLoad";
             };
         };
     };

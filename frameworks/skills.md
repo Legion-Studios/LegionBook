@@ -9,7 +9,7 @@ The skills framework aims to make mission and mod makers able to easily check if
 
 Skills like medic, engineer, and EOD are compatible with vanilla and ACE.
 
-## 1. Getting / setting a skill
+## 1. Getting or Setting a Skill
 ### 1.1 Config
 Skills like tech specialist, pilot, and crewman can be set via config.
 ```cpp

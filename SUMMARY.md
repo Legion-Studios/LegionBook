@@ -67,3 +67,10 @@
     * [Configuration](frameworks/weapons/attachment-swapping.md#id-1.-configuration)
   * [Aim Down Sight Sounds](frameworks/weapons/aim-down-sight-sounds.md)
     * [Configuration](frameworks/weapons/aim-down-sight-sounds.md#id-1.-configuration)
+* [Vehicle-In-Vehicle Loading](frameworks/vehicle-in-vehicle-loading.md)
+  * [Configuration](frameworks/vehicle-in-vehicle-loading.md#id-1.-configuration)
+
+## Developer Guidelines
+* [Introduction](dev-guidelines/introduction.md)
+* [Local Environment Setup](dev-guidelines/local-environment.md)
+* [Macro Usage](dev-guidelines/macros.md)

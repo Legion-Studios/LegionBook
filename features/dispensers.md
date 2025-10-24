@@ -17,6 +17,8 @@ If you'd like more customization, you can also provide a list of unit class name
 ### Eden
 To use the Eden module, simply place it from the `[LS] Modules` category. Double click on it and scroll down to the module settings.
 
+The eden module is activated via trigger, meaning you can have it activate from a radio signal; from players entering an area; having BLUFOR being detected by OPFOR; etc.
+
 <figure>
     <img src="assets/modules/dispenser_eden.jpg" alt="Droid Dispenser Eden Module UI">
     <figcaption></figcaption>

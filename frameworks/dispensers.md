@@ -7,9 +7,9 @@ description: >-
 
 ## 1. Group Configuration
 Droid Dispensers use CfgGroups classes for their spawning logic. Groups can be enabled/disabled at the faction, category, and group levels. The `ls_dispenser_available` variable controls whether something should be shown and has three states:
-- -1 - Hidden
-- 0 - Use value of the higher class (default)
-- 1 - Shown
+- `-1` - Hidden
+- `0` - Use value of the higher class (default)
+- `1` - Shown
 
 ### 1.1 Examples
 `Group1` is available, but not `Group2`.

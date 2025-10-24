@@ -17,10 +17,17 @@ If you'd like more customization, you can also provide a list of unit class name
 ### Eden
 To use the Eden module, simply place it from the `[LS] Modules` category. Double click on it and scroll down to the module settings.
 
-![Droid Dispenser Eden Module UI](../.gitbook\assets\features\modules\dispenser_eden.jpg)
+<figure>
+    <img src="assets/modules/dispenser_eden.jpg" alt="Droid Dispenser Eden Module UI">
+    <figcaption></figcaption>
+</figure>
 
 ### Zeus
 To use the Zeus module, simply place it from the `[LS] Modules` category. After selecting a group, press OK and the droid dispenser will begin to fall. Your last selected options will also be saved for the mission, and the next module you place will have the same settings as the last one you used.
 
 A yellow circle around the module will be shown similar to the vanilla ordinance modules. Other Zeuses will be able to see this circle as well.
-![Droid Dispenser Zeus Module UI](../.gitbook\assets\features\modules\dispenser_zeus.jpg)
+
+<figure>
+    <img src="assets/modules/dispenser_zeus.jpg" alt="Droid Dispenser Zeus Module UI">
+    <figcaption></figcaption>
+</figure>

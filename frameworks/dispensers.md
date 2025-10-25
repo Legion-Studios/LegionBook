@@ -67,7 +67,7 @@ You can configure your own Zeus modules to make it easy for Zeuses to spawn your
 // Make sure to add the module class name to your units list to it appears in Zeus
 class CfgVehicles {
     class ls_moduleDroidDispenser_zeus;
-    class MyPrefix_moduleDroidDispenser_B1_zeus: NCA_moduleDroidDispenser_zeus {
+    class MyPrefix_moduleDroidDispenser_B1_zeus: ls_moduleDroidDispenser_zeus {
         author = "Me";
         displayName = "Droid Dispenser (B1)";
 

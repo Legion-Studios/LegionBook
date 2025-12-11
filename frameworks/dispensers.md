@@ -63,6 +63,13 @@ For groups, the group's icon (set in the group class itself) will be used and be
 You can configure your own Zeus modules to make it easy for Zeuses to spawn your own Droids without making them select them via the module GUI.
 
 ```cpp
+class CfgFactionClasses {
+    class NO_CATEGORY;
+    class MyPrefix_modules: NO_CATEGORY {
+        displayName = "[Unit Name] Modules";
+    };
+};
+
 // Make sure ls_loadorder is present in your requiredAddons
 // Make sure to add the module class name to your units list to it appears in Zeus
 class CfgVehicles {
@@ -71,7 +78,7 @@ class CfgVehicles {
         author = "Me";
         displayName = "Droid Dispenser (B1)";
 
-        faction = "MyPrefix_modules";
+        category = "MyPrefix_modules";
 
         // ls_dispenser_group can either be an string which points to a class in CfgGroups, using `>>` as a separator between class names
         // Or it can be an array of unit class names directly

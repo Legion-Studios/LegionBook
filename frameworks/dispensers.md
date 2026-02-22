@@ -71,14 +71,15 @@ class CfgFactionClasses {
 };
 
 // Make sure ls_loadorder is present in your requiredAddons
-// Make sure to add the module class name to your units list to it appears in Zeus
+// Make sure to add the module class name to your `CfgPatches >> yourAddon >> units` list to it appears in Zeus
 class CfgVehicles {
     class ls_moduleDroidDispenser_zeus;
     class MyPrefix_moduleDroidDispenser_B1_zeus: ls_moduleDroidDispenser_zeus {
         author = "Me";
         displayName = "Droid Dispenser (B1)";
-
         category = "MyPrefix_modules";
+
+        ammo = "ls_dispenser_ordnance"; // Optional, ammo class name that is dropped
 
         // ls_dispenser_group can either be an string which points to a class in CfgGroups, using `>>` as a separator between class names
         // Or it can be an array of unit class names directly
@@ -86,6 +87,8 @@ class CfgVehicles {
         ls_dispenser_group[] = {"MyPrefix_B1", "MyPrefix_B1_Heavy"}; // Also valid
 
         ls_dispenser_vehicle = "ls_droidDispenser"; // Optional, you can use your own droid dispenser class if you'd like to change the textures, armor, etc.
+
+        ls_dispenser_limit = 50; // Optional, maximum number of units to spawn before the dispenser is deactivated
     };
 };
 ```
@@ -128,3 +131,31 @@ Sets the spawn group of a given droid dispenser. Handles changing the side of th
 
 #### Return Value
 None
+
+### 3.4 `ls_dispenser_fnc_dropDispenser`
+#### Description
+Spawns a falling dispenser at the given position, *note that the altitude is used directly, so spawning at [x, y, 0] will cause it to immediately land on the ground*. We reccomend a minimum height of 1000m. See [Module Configuration](frameworks/dispensers#id-2.-module-configuration) for more information on the dispenser parameters.
+
+#### Parameters
+| Index | Description      | Datatype(s) | Default Value |
+| ----- | ---------------- | ----------- | ------------- |
+| 0     | Dispenser params | Hashmap     |               |
+| 1     | PositionATL      | Array       |               |
+| 2     | Velocity         | Array       | [0, 0, -100]  |
+
+#### Return Value
+The created projectile
+
+#### Examples
+```sqf
+[createHashMapFromArray [
+    ["spawnGroup", "ls_cis>>cis_baseInfantry>>base_b1_fireteam"],
+], [0, 0, 1000]] call ls_dispenser_fnc_dropDispenser;
+
+[createHashMapFromArray [
+    ["spawnGroup", ["ls_droid_b1", "ls_droid_b2"]],
+    ["spawnLimit", 3], // Optional
+    ["dispenserClass", "ls_droidDispenser"], // Optional
+    ["ammoClass", "ls_dispenser_ordnance"] // Optional
+], [0, 0, 1000]] call ls_dispenser_fnc_dropDispenser;
+```

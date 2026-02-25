@@ -14,6 +14,8 @@ You can use the search bar to search for a specific faction, category, or group 
 
 If you'd like more customization, you can also provide a list of unit class names in the "Custom Group" field. It should be formatted as `['unitClass1','unitClass2']`. Unit classes that aren't defined will be filtered out.
 
+By default, Droid Dispensers will automatically deactivate after spawning 50 units, you can set this limit to whatever you'd like or set it to -1 to make it spawn units until it is manually deactivated or destroyed.
+
 ### Eden
 To use the Eden module, simply place it from the `[LS] Modules` category. Double click on it and scroll down to the module settings.
 

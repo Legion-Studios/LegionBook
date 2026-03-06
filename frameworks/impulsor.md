@@ -17,29 +17,20 @@ Here is an example setup for the impulsor framework using default values:
 // It is strongly encouraged to use this class or inherit
 // from the ls_impulsor class of a vehicle itself.
 class ls_impulsor_base {
-    enabled = 1; // 0-Disabled, 1-Enabled
+    enabled = 1; // 0-Disabled, 1-Enabled 
+    speed = 400; // Speed in km/h
+    fuelDrain = 0.0001; // Percent of fuel used every 1/2 seconds
+    overchargeSpeed = 600; // Same but for overcharge
+    overchargeFuelDrain = 0.0003; // Same but for overcharge
+    // Time in seconds before overcharge can be used after turning it off
+    overchargeCooldown = 60;
 
     // CfgSounds class to play when impulse is activated
     impulseSoundOn = "ls_impulseOn_laat";
     // CfgSounds class to play when impulse is de-activated
     impulseSoundOff = "ls_impulseOff_laat";
     repulseSoundOn = ""; // Same but for repulse
-    repulseSoundOff = ""; // Same but for repulse
-
-    // List of class names for impulsor modes
-    // These names are arbitrary, and the current mode is stored as a number which is the index in this array.
-    // E.g. -2 is repulse, -1 is disabled, 0 is "impulsor", and 2 is "overcharge"
-    levels[] = {"impulsor", "overcharge"};
-    class impulsor {
-        speed = 400; // Speed in km/h
-        fuelDrain = 0.0001; // Percent of fuel used every 1/2 seconds
-    };
-    class overcharge {
-        speed = 600;
-        fuelDrain = 0.0003;
-        cooldown = 60; // Time in seconds before this mode (or any higher mode) can be used after turning it off
-        isOvercharge = 1; // Enables engine damage chance and mode cooldown: 0-false, 1-true
-    };
+    repulseSoundOff = ""; // Same but for repulss
 };
 
 class CfgVehicles {

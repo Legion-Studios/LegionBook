@@ -8,7 +8,4 @@ NVGs can be configured to display extra information by using custom HUD elements
 
 Here's an example of the Phase 1 and Phase 2 rangefinder NVGs' HUD.
 
-<figure>
-    <img src="assets/rangefinder.png" alt="Rangefinder HUD with text descriptions">
-    <figcaption></figcaption>
-</figure>
+<figure><img src="../../.gitbook/assets/rangefinder_example.png" alt="Rangefinder HUD with text descriptions"><figcaption></figcaption></figure>

@@ -79,3 +79,7 @@
 * [Introduction](dev-guidelines/introduction.md)
 * [Local Environment Setup](dev-guidelines/local-environment.md)
 * [Macro Usage](dev-guidelines/macros.md)
+
+## Release Pipeline
+* [Introduction](release-pipeline/introduction.md)
+* [GitHub Action](release-pipeline/action.md)

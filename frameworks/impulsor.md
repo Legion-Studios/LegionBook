@@ -8,7 +8,7 @@ description: >-
 
 ## 1. Configuration
 
-Making a vehicle use the impulsor framework is very straightforward. Previous iterations required executing the `ls_vehicle_fnc_impulsorMonitor`, this is no longer the case and this function is no longer used, but kept for backwards compatibility.
+Making a vehicle use the impulsor framework is very straightforward. Previous iterations required calling the `ls_vehicle_fnc_impulsorMonitor` function, this is no longer the case. This function is no longer used, but kept for backwards compatibility.
 
 Here is an example setup for the impulsor framework using default values:
 
@@ -17,7 +17,7 @@ Here is an example setup for the impulsor framework using default values:
 // It is strongly encouraged to use this class or inherit
 // from the ls_impulsor class of a vehicle itself.
 class ls_impulsor_base {
-    enabled = 1; // 0-Disabled, 1-Enabled
+    enabled = 1; // 0-Disabled, 1-Enabled 
     speed = 400; // Speed in km/h
     fuelDrain = 0.0001; // Percent of fuel used every 1/2 seconds
     overchargeSpeed = 600; // Same but for overcharge
@@ -30,8 +30,8 @@ class ls_impulsor_base {
     // CfgSounds class to play when impulse is de-activated
     impulseSoundOff = "ls_impulseOff_laat";
     repulseSoundOn = ""; // Same but for repulse
-    repulseSoundOff = ""; // Same but for repulse
-}
+    repulseSoundOff = ""; // Same but for repulss
+};
 
 class CfgVehicles {
     class ls_laati;
@@ -52,3 +52,11 @@ class CfgVehicles {
 | `ls_impulsor_activated`    | Vehicle's impulsor is activated.     | `[_vehicle, _impulseSettings]`                                  | Global         |
 | `ls_impulsor_deactivated`  | Vehicle's impulsor is deactivated.   | `[_vehicle, _impulseSettings]`                                  | Global         |
 | `ls_impulsor_levelChanged` | Vehicle's impulsor level is changed. | `[_vehicle, _impulseSettings, _impulseLevel, _oldImpulseLevel]` | Local          |
+
+## 3. Variables
+
+| Name                           | Description                            | Type    |
+| ------------------------------ | -------------------------------------- | ------- |
+| `ls_impulsor_active`           | Whether the impulsor is active or not. | Boolean |
+| `ls_impulsor_level`            | The current impulsor mode.             | Number  |
+| `ls_impulsor_overchargeActive` | Whether overcharge is active or not.   | Boolean |

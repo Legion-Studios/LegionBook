@@ -30,6 +30,7 @@ jobs:
     - name: Setup HEMTT
       uses: arma-actions/hemtt@v1
     - name: Setup Binarize
+    # I want to credit the persons work I referenced for this but I can't remember who it was. If it's you, please let me know so I can credit you properly. The code is based on the way they downloaded and set up Binarize in their workflow.
       run: |
         $presignedUrl = aws s3 presign {redacted for privacy} --expires-in 3600
         curl -L -o legionstudios-tools.zip "$presignedUrl"

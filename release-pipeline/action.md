@@ -1,6 +1,6 @@
 # Action file
 
-Legion Studios uses GitHub Actions to automate our release pipeline. This allows us to publish releases in Github and go hands off for the rest of the process. The action is triggered by publishing a release. It will automatically build the mod and upload it to the Steam Workshop.
+Legion Studios uses GitHub Actions to automate our publish of the mod to the Steam WorkShop. This allows us to create & publish releases in Github and go hands off for the rest of the process.
 
 ## Workflow File
 
@@ -26,6 +26,7 @@ jobs:
     - name: Checkout the source code
       uses: actions/checkout@v4
       with:
+      # this is required for our workflow because we have a translations submodule. If you don't have any submodules, you can delete the line
         submodules: true
     - name: Setup HEMTT
       uses: arma-actions/hemtt@v1
@@ -63,6 +64,7 @@ jobs:
         retention-days: 1
         include-hidden-files: true
 
+# this is a wrapper of a tool to convert markdown to steam's format, its public feel free to use
   generate-steam-md:
     runs-on: ubuntu-latest
     steps:
@@ -82,11 +84,11 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: legionstudios
-      - name: Upload to Steam (Legion Studios Dev Builds)
+      - name: Upload to Steam (Legion Studios Core)
         uses: arma-actions/workshop-upload@v1
         with:
           appId: '107410' # Arma 3 App ID
-          itemId: 'your steam workshop item id here'
+          itemId: 'your steam workshop item id here' # you can find this in the url of your workshop item page
           contentPath: '@Legion-Core'
           changelog: ${{ needs.generate-steam-md.outputs.steammd }}
         env:
@@ -122,12 +124,12 @@ The workflow consists of three jobs: `build`, `publish`, and `notify-discord`.
   - Uploads the built mod as an artifact for use in later jobs.
    - Our artifacts are ungodly large because we have a lot of p3d's, audio files, and other assets that are needed for the mod to function. If your mod is smaller, you will not experience as long of release times as we do.
 
-   We have to use a Windows runner for the build job because Binarize is a Windows executable and HEMTT relies on it for packing the pbo files.
+   We have to use a Windows runner for the build job because Binarize is a Windows executable and HEMTT relies on it for packing the pbo files. I haven't tested this yet but if you don't need to binarize any files then you may be able to skip that step and use a Linux runner for the build job, which may speed up the workflow significantly. If you do need to use Binarize but want to use a Linux runner, you could look into using Wine to run Binarize on Linux, but I haven't tested this and can't guarantee it will work.
 
 - The `generate-steam-md` job runs on an Ubuntu runner and converts the release body markdown into a format suitable for Steam using a custom action.
 - The `publish` job depends on both the `build` and `generate-steam-md` jobs. It downloads the built mod artifact and uploads it to the Steam Workshop using another custom action `arma-actions/workshop-upload`. The changelog for the Steam upload is set to the formatted markdown from the previous job.
 
-    There you have to disable Steam Guard for the account you are using to upload to the Workshop. This is problematic because recent Steam Changes force workshop uploads to be friends-only if Steam Guard is disabled. We're currently working on a solution to this.
+    You have to disable Steam Guard for the account you are using to upload to the Workshop. This is problematic because recent Steam Changes force workshop uploads to be friends-only if Steam Guard is disabled. We're currently working on a solution to this. An immediate solution would be to use another account with Steam Guard disabled that has access to the mod but does not own it.
 
 - The `notify-discord` job depends on the `publish` job and sends a notification to a Discord channel using a webhook, with the content set to the release body markdown.
 

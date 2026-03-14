@@ -142,3 +142,7 @@ The workflow uses the following secrets, which need to be configured in the GitH
 - `STEAM_USERNAME`: Steam username for uploading to the Steam Workshop.
 - `STEAM_PASSWORD`: Steam password for uploading to the Steam Workshop.
 - `DISCORD_WEBHOOK_URL`: Webhook URL for sending notifications to Discord.
+
+## Notes
+- This workflow is incredibly slow for us as seen in the pictures because the free Github runners are not very powerful and our mod is quite large. If your mod is smaller, you will likely see much faster build and upload times. If you want to speed up the workflow, you can consider using self-hosted runners with more powerful hardware. If you look in the image below, you'll see we're not being billed for this compute time even though we ocasionally exhaust the free minutes.
+![2025 usage stats](usage.png)

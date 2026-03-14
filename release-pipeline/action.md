@@ -93,7 +93,7 @@ jobs:
           STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
 
   notify-discord:
-    needs: [publish-test]
+    needs: [publish]
     runs-on: ubuntu-latest
     steps:
       - name: Send Discord Notification

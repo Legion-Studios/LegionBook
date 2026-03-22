@@ -74,8 +74,8 @@
   * [Aim Down Sight Sounds](frameworks/weapons/aim-down-sight-sounds.md)
     * [Configuration](frameworks/weapons/aim-down-sight-sounds.md#id-1.-configuration)
   * [Explosives](frameworks/weapons/explosives.md)
-    * [Breaching Charge](frameworks/weapons/explosives.md#id-1.-breaching-charge)
-    * [Caltrops](frameworks/weapons/explosives.md#id-1.-caltrops)
+    * [Breaching Charge](frameworks/weapons/explosives.md#breaching-charge)
+    * [Caltrops](frameworks/weapons/explosives.md#caltrops)
 * [Vehicle-In-Vehicle Loading](frameworks/vehicle-in-vehicle-loading.md)
   * [Configuration](frameworks/vehicle-in-vehicle-loading.md#id-1.-configuration)
 

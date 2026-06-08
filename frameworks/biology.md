@@ -1,7 +1,6 @@
 ---
 description: >-
-  Legion Studios' biology framework, including how to use it and how to add your
-  own biologies.
+  Legion Studios' biology framework, including how to use it and how to add your own biologies.
 ---
 
 # Biology

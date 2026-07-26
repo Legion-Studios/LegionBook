@@ -93,8 +93,49 @@ class CfgVehicles {
 };
 ```
 
-## 3. Functions
-### 3.1 `ls_dispenser_fnc_activate`
+## 3. Dispenser Configuration
+You can configure your own Zeus modules to make it easy for Zeuses to spawn your own Droids without making them select them via the module GUI.
+
+```cpp
+class CfgVehicles {
+    // Not needed, but does set some basic variables
+    class ls_droidDispenser_base;
+    class YourPrefix_dispenser: ls_droidDispenser_base {
+        author = "Me";
+        displayName = "My Custom Dispenser";
+
+        ls_dispenser_hatchCount = 3; // Total number of hatches
+        ls_dispenser_hatchHitpoint = "HitHatch%1"; // Optional: Name format for hitpoints, used to disable hatches if a given hitpoint is destroyed. %1 is placeholder for hatch number (1 - hatchCount)
+        ls_dispenser_hatchAnimation = "Hatch%1_move"; // Name format for AnimationSources names. %1 is placeholder for hatch number (1 - hatchCount)
+        ls_dispenser_hatchDirections[] = {90, 330, 210}; // Directions that units will face while being spawned, must be in hatch order
+        ls_dispenser_activationSelection[] = {"hiddenSelectionName", "#(rgb,8,8,3)color(0.9,0,0.2,0.7)"}; // Name in hiddenSelections and the texture to use while the dispenser is active. Selection is also used for when a dispenser fails to spawn a unit because the hitpoint is destroyed
+        ls_dispenser_unitAnimation = "ls_droid_folded"; // Animation to use for while a unit is on the rack
+
+        // Additionally, created units will be spawned at and attached to the `Spawn%1` memory point. %1 is placeholder for hatch number (1 - hatchCount)
+
+        class HitPoints {
+            class HitBody { ... };
+            class HitHatch1 { ... };
+            class HitHatch2: HitHatch1 { ... };
+            class HitHatch3: HitHatch1 { ... };
+        };
+
+        animationList[] = {
+            "Hatch1_move", 0,
+            "Hatch2_move", 0,
+            "Hatch3_move", 0
+        };
+        class AnimationSources {
+            class Hatch1_move { ... };
+            class Hatch2_move: Hatch1_move { ... };
+            class Hatch3_move: Hatch1_move { ... };
+        };
+    };
+};
+```
+
+## 4. Functions
+### 4.1 `ls_dispenser_fnc_activate`
 #### Description
 Activates a droid dispenser and starts the loop for droid dispensers to spawn units if needed. Spawn group must either be an array of units or a string pointing to a group (same as `ls_dispenser_group` in module config).
 
@@ -107,7 +148,7 @@ Activates a droid dispenser and starts the loop for droid dispensers to spawn un
 #### Return Value
 None
 
-### 3.2 `ls_dispenser_fnc_deactivate`
+### 4.2 `ls_dispenser_fnc_deactivate`
 #### Description
 Deactivates a droid dispenser.
 
@@ -119,7 +160,7 @@ Deactivates a droid dispenser.
 #### Return Value
 None
 
-### 3.3 `ls_dispenser_fnc_setSpawnGroup`
+### 4.3 `ls_dispenser_fnc_setSpawnGroup`
 #### Description
 Sets the spawn group of a given droid dispenser. Handles changing the side of the droid dispenser's UAV crew if the new group is of a different side.
 
@@ -132,7 +173,7 @@ Sets the spawn group of a given droid dispenser. Handles changing the side of th
 #### Return Value
 None
 
-### 3.4 `ls_dispenser_fnc_dropDispenser`
+### 4.4 `ls_dispenser_fnc_dropDispenser`
 #### Description
 Spawns a falling dispenser at the given position, *note that the altitude is used directly, so spawning at [x, y, 0] will cause it to immediately land on the ground*. We reccomend a minimum height of 1000m. See [Module Configuration](frameworks/dispensers#id-2.-module-configuration) for more information on the dispenser parameters.
 

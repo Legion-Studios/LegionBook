@@ -108,7 +108,7 @@ class CfgVehicles {
         ls_dispenser_hatchHitpoint = "HitHatch%1"; // Optional: Name format for hitpoints, used to disable hatches if a given hitpoint is destroyed. %1 is placeholder for hatch number (1 - hatchCount)
         ls_dispenser_hatchAnimation = "Hatch%1_move"; // Name format for AnimationSources names. %1 is placeholder for hatch number (1 - hatchCount)
         ls_dispenser_hatchDirections[] = {90, 330, 210}; // Directions that units will face while being spawned, must be in hatch order
-        ls_dispenser_activationSelection[] = {"hiddenSelectionName", "#(rgb,8,8,3)color(0.9,0,0.2,0.7)"}; // Name in hiddenSelections and the texture to use while the dispenser is active. Selection is also used for when a dispenser fails to spawn a unit because the hitpoint is destroyed
+        ls_dispenser_activationSelection[] = {"hiddenSelectionName", "#(rgb,8,8,3)color(0.9,0,0.2,0.7)", "#(rgb,8,8,3)color(1,0,0,0.7)"}; // Name in hiddenSelections, texture to use when dispenser is active, texture to use when dispener fails to spawn a unit because hitpoint is destroyed
         ls_dispenser_unitAnimation = "ls_droid_folded"; // Animation to use for while a unit is on the rack
 
         // Additionally, created units will be spawned at and attached to the `Spawn%1` memory point. %1 is placeholder for hatch number (1 - hatchCount)

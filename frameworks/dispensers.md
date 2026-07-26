@@ -97,13 +97,6 @@ class CfgVehicles {
 You can configure your own Zeus modules to make it easy for Zeuses to spawn your own Droids without making them select them via the module GUI.
 
 ```cpp
-class CfgFactionClasses {
-    class NO_CATEGORY;
-    class MyPrefix_modules: NO_CATEGORY {
-        displayName = "[Unit Name] Modules";
-    };
-};
-
 class CfgVehicles {
     // Not needed, but does set some basic variables
     class ls_droidDispenser_base;

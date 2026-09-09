@@ -25,6 +25,7 @@
 * [Map](features/map.md)
   * [Usage](features/map.md#id-1.-usage)
   * [Settings](features/map.md#id-2.-settings)
+* [Modules](features/modules.md)
 * [Skills](features/skills.md)
   * [Usage](features/skills.md#id-1.-usage)
   * [Examples](features/skills.md#id-2.-examples)

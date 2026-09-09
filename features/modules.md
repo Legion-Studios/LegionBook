@@ -8,28 +8,6 @@ Descriptions and instructions for how to use the various models added by Legion 
 
 Some more complicated modules are detailed separately
 
-## Toggle Camo
-Available in: Eden ❌ | Zeus ✔
-
-### Description
-Toggles a unit's active camoflauge.
-
-### How to use
-1. Select the module
-2. Place the module on a unit
-   - If the unit has an active camo-compatible uniform, they will activate it.
-   - If not, a message will display and nothing will happen.
-
-## Delete Groups
-Available in: Eden ❌ | Zeus ✔
-
-### Description
-Deletes empty groups that are marked as "deleteable" by the engine. The module runs on all machines and will delete groups on all machines, and then give the user a count of how many groups were deleted on *their* machine.
-
-### How to use
-1. Select the module
-2. Place the module anywhere
-
 ## Add Reinsert Action
 Available in: Eden ✔ | Zeus ✔
 
@@ -45,16 +23,27 @@ Adds the "Notify Pilots" scroll wheel action to the specified object(s). Using t
 1. Select the module
 2. Place the module on an object
 
-## Breach Door
-Available in: Eden ❌ | Zeus ✔
+## Aircraft Spawner
+Available in: Eden ✔ | Zeus ❌
 
 ### Description
-Orders an AI unit to breach a nearby closed door. The selected AI will walk up to the closest door (based on the options selected), place a breaching charge on the door, and return to their original group / position. The charge will then explode, breaching the door.
+Continiously spawns selected aircraft at the module's position, with options for when to spawn waves, the size of the waves, and vehicle types to spawn..
 
 ### How to use
 1. Select the module
-2. Place the module on a unit
-3. Select OK
+2. Place the module at the position aircraft should spawn near
+   - Aircraft will spawn with a horizontal and vertical offset from the module to prevent crashing into each other
+3. Place a trigger with an area
+   - This is what activate the module and begin spawning aircraft
+4. Set the trigger's activation conditions
+   - E.g. "Any Player Present"
+5. Sync the trigger to the module
+6. Sync the module to any object(s) you want to deactivate the module
+   - Once activated, the spawner will keep spawning vehicles until all the synced objects are destroyed
+   - Any object can be synced, e.g. units, vehicles, props, etc.
+   - At least one object **must** be synced, the module will never activate if no objects beside the trigger are synced.
+
+![Aircraft spawner eden module](../features/assets/modules/aircraftSpawner_eden.gif)
 
 ## Area Heal
 Available in: Eden ✔ | Zeus ❌
@@ -66,6 +55,32 @@ Creates a healing area that will heal players when they enter it.
 1. Select the module
 2. Place the module anywhere
 3. Adjust the module's size and position to change the healing area
+
+## Breach Door
+Available in: Eden ❌ | Zeus ✔
+
+### Description
+Orders an AI unit to breach a nearby closed door. The selected AI will walk up to the closest door (based on the options selected), place a breaching charge on the door, and return to their original group / position. The charge will then explode, breaching the door.
+
+### How to use
+1. Select the module
+2. Place the module on a unit
+3. Select OK
+
+## Delete Groups
+Available in: Eden ❌ | Zeus ✔
+
+### Description
+Deletes empty groups that are marked as "deleteable" by the engine. The module runs on all machines and will delete groups on all machines, and then give the user a count of how many groups were deleted on *their* machine.
+
+### How to use
+1. Select the module
+2. Place the module anywhere
+
+## Droid Dispenser
+Available in: Eden ✔ | Zeus ✔
+
+See [Droid Dispensers](dispensers.md)
 
 ## Mount AT-RT
 Available in: Eden ❌ | Zeus ✔
@@ -91,34 +106,19 @@ Orders an AI to dismount their AT-RT.
 2. Place the module on a unit riding an AT-RT **or** an AT-RT with a rider
 3. Select OK
 
-## Dismount AT-RT
-Available in: Eden ❌ | Zeus ✔
-
-### Description
-Orders an AI to dismount their AT-RT.
-
-### How to use
-1. Select the module
-2. Place the module on a unit riding an AT-RT **or** an AT-RT with a rider
-3. Select OK
-
 ## Set Skills
 Available in: Eden ❌ | Zeus ✔
 
 See [Skills](skills.md)
 
-## Aircraft Spawner
-Available in: Eden ✔ | Zeus ❌
+## Toggle Camo
+Available in: Eden ❌ | Zeus ✔
 
 ### Description
-Allows to continiously spawn selected aircraft at the module's position
+Toggles a unit's active camoflauge.
 
 ### How to use
 1. Select the module
-2. Place a trigger with an area
-   - This is what activate the module and being spawning aircraft
-3. Set the trigger's activation conditions
-   - E.g. "Any Player Present"
-4. S
-
-![Aircraft spawner eden module](../features/assets/modules/aircraftSpawner_eden.gif)
+2. Place the module on a unit
+   - If the unit has an active camo-compatible uniform, they will activate it.
+   - If not, a message will display and nothing will happen.

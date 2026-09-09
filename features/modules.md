@@ -27,7 +27,7 @@ Adds the "Notify Pilots" scroll wheel action to the specified object(s). Using t
 Available in: Eden ✅ | Zeus ❌
 
 ### Description
-Continiously spawns selected aircraft at the module's position, with options for when to spawn waves, the size of the waves, and vehicle types to spawn..
+Continuously spawns selected aircraft at the module's position, with options for when to spawn waves, the size of the waves, and vehicle types to spawn..
 
 ### How to use
 1. Select the module
@@ -115,7 +115,7 @@ See [Skills](skills.md#id-1.2-zeus-module)
 Available in: Eden ❌ | Zeus ✅
 
 ### Description
-Toggles a unit's active camoflauge.
+Toggles a unit's active camouflage.
 
 ### How to use
 1. Select the module

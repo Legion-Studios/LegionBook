@@ -1,4 +1,4 @@
-map---
+---
 description: >-
   Legion Studios' changes / additions to the map display.
 ---

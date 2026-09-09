@@ -1,8 +1,6 @@
 # Introduction
 
-This section covers more technical details intended for those wanting to implement frameworks added by Legion Studios. If you are looking at how to use a feature, instead check out the [Broken link](/broken/pages/uRnDjYEF9cfnlfCiH8Db "mention") pages.
-
-
+This section covers more technical details intended for those wanting to implement frameworks added by Legion Studios. If you are looking at how to use a feature, instead check out the [Feature](features/introduction.md) section.
 
 ## Events
 

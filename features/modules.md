@@ -80,7 +80,7 @@ Deletes empty groups that are marked as "deleteable" by the engine. The module r
 ## Droid Dispenser
 Available in: Eden ✅ | Zeus ✅
 
-See [Droid Dispensers](dispensers.md)
+See [Droid Dispensers](dispensers.md#zeus)
 
 ## Mount AT-RT
 Available in: Eden ❌ | Zeus ✅
@@ -109,7 +109,7 @@ Orders an AI to dismount their AT-RT.
 ## Set Skills
 Available in: Eden ❌ | Zeus ✅
 
-See [Skills](skills.md)
+See [Skills](skills.md#id-1.2-zeus-module)
 
 ## Toggle Camo
 Available in: Eden ❌ | Zeus ✅

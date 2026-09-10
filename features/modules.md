@@ -24,12 +24,17 @@ Adds the "Notify Pilots" scroll wheel action to the specified object(s). Using t
 2. Place the module on an object
 
 ## Aircraft Spawner
-Available in: Eden ✅ | Zeus ❌
+Available in: Eden ✅ | Zeus ✅
 
 ### Description
-Continuously spawns selected aircraft at the module's position, with options for when to spawn waves, the size of the waves, and vehicle types to spawn..
+Continuously spawns selected aircraft at the module's position, with options for when to spawn waves, the size of the waves, and vehicle types to spawn.
+
+The Zeus version of the module also has support for the rally points system from [Zeus Enhanced](https://steamcommunity.com/workshop/filedetails/?id=1779063631) and will move to the selected waypoint. If ZEN isn't loaded, the aircraft will behave like normal.
+
+The Zeus module can also be edited by double clicking on the module again.
 
 ### How to use
+#### Eden
 1. Select the module
 2. Place the module at the position aircraft should spawn near
    - Aircraft will spawn with a horizontal and vertical offset from the module to prevent crashing into each other
@@ -44,6 +49,14 @@ Continuously spawns selected aircraft at the module's position, with options for
    - At least one object **must** be synced, the module will never activate if no objects beside the trigger are synced.
 
 ![Aircraft spawner eden module](../features/assets/modules/aircraftSpawner_eden.gif)
+
+#### Zeus
+1. Select the module
+2. Place the module on the object that will spawn aircraft
+   - The module will be attached to this object
+3. Select OK
+
+![Aircraft spawner zeus module](../features/assets/modules/aircraftSpawner_zeus.gif)
 
 ## Area Heal
 Available in: Eden ✅ | Zeus ❌
